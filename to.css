@@ -4,11 +4,11 @@
   }
   
   body {
-    background-color: #91D0EF;
+    background-image:linear-gradient(to right,red,orange);
   }
   
   .container {
-    background: #32315B;
+    background: rgb(177, 171, 171);
     height: 500px;
     width: 400px;
     margin-left: auto;
@@ -17,12 +17,14 @@
     padding: 20px;
     color: white;
     font-weight: 20;
+    border-radius: 12px;
   }
   
   .img {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    mix-blend-mode: darken;
   }
   
   .in {
@@ -30,31 +32,35 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 20px;
     margin-top: 10px;
+    background-color:#292850;
+    border-radius: 20px;
+
   }
   
   input[type="text"] {
-    height: 30px;
-    width: 250px;
+    height: 35px;
+    width: 320px;
     border-radius: 20px;
-    text-align: center;
-    background-color: #292850;
+    text-align: left;
+    background-color:#292850;
     color: white;
+    border:none;
+    padding-left:10px;
   }
-  input[type="text"]::placeholder {
-    color:white;
-  }
-  input[type="text"]::placeholder:hover {
-    transform: translateY(-20px);
-    transition: transform 0.3s ease-out;
+  
+  
+
+  input[type="text"]:focus {
+    outline:none;
   }
   button {
     height: 30px;
     width: 60px;
-    border-radius: 20px;
-    background-color: #292850;
+    border-radius:20px;
+    background-color: rgb(231, 48, 48);
     color: white;
+    border:none;
   }
   
   .list {
